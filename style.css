@@ -1,0 +1,105 @@
+/* Reset & Basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Light body background so the black wrapper doesn't stretch across the entire viewport */
+  body {
+    background-color: #f5f5f5; /* You can use white (#fff) or any light color here */
+  }
+  
+  /* The black container that won't be full width */
+  .page-wrapper {
+    background-color: #0e0e0e;
+    width: 80%;           /* Constrict the total width */
+    max-width: 1200px;
+    margin: 2rem auto;    /* Center it with auto left/right margins */
+    padding: 2rem;
+    color: #fff;          /* White text inside the black area */
+  }
+  
+  /* Header section */
+  header {
+    margin-bottom: 3rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #bbbbbb;
+    text-align: center;
+  }
+  
+  /* Each feature section */
+  .feature-section {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center; /* Centers the .feature-card horizontally */
+  }
+  
+  /* The card with lighter gray background & white stroke */
+  .feature-card {
+    background-color: #222;   /* Lighter gray than #111 */
+    border: 1px solid #4b4b4b;   /* Thin white stroke */
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  /* Text within each card */
+  .feature-text {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .feature-text p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #444;
+  }
+  
+  .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Fill container, possibly cropping edges */
+    display: block;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .page-wrapper {
+      width: 95%;
+      padding: 1.5rem;
+    }
+  
+    .feature-card {
+      padding: 1rem;
+    }
+  
+    .image-placeholder {
+      height: 200px;
+    }
+  }
+  
